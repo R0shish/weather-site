@@ -3,12 +3,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.background{
+body{
     position: absolute;
     height: 100%;
     width: 100%;
-    /* background: url('https://source.unsplash.com/featured?') no-repeat center fixed; */
-    background: url(background.jpg) no-repeat center fixed;
+    /* background: url(background.jpg) no-repeat center fixed; */
+    background: url('https://source.unsplash.com/featured?Weather') no-repeat center fixed;
     background-size: cover;
     
 }
