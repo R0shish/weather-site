@@ -16,15 +16,19 @@ body{
 .heading{
     font-size: 40px;
     font-weight: 400;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .location{
     font-size: 70px;
     font-weight: 500;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
 }
 
 .search-box{
-    
     background: #2C3441;
     height: 45px;
     border-radius: 40px;
@@ -38,7 +42,6 @@ body{
 
 
 .icon{
-    color: white;
     float: right;
     width: 45px;
     height: 45px;
@@ -49,6 +52,9 @@ body{
     transition: 0.4s;
     cursor: pointer;
     text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
 }
 
 input{
@@ -79,10 +85,14 @@ input{
     margin: 0 10vw;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .temperature{
     display: flex;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
 }
 
 .weather-container{
@@ -90,4 +100,6 @@ input{
     flex-direction: column;
     align-items:flex-end;
     margin: 0 10vw;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
 }
