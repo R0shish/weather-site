@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="styles.css">    
 </head>
 <body>
-  <!-- <div class="background">
-    <div class="container"> -->
+  <div class="loading">
+    <img class="loading-gif" src="loading.gif" height="500" width="500">
+    <h3 class="loading-text">Loading<br>Please Wait</h3>
+  </div>
+    <div class="weather-app">
       <div class="top">
-        <h1 class="heading">Weather Forecast</h1>
+        <h1 class="heading">Weather App</h1>
         <div class="search-box">
             <input type="text" id="search" placeholder="Search"/>
             <a href="#" class="icon" onclick="searchClick()">
@@ -23,13 +26,30 @@
         </div>
       </div>
       <div class="weather-container">
-        <h1 class="location" id="location-text"></h1>
         <div class="temperature">
-           <!-- <i class="icon" id="icon"></i> -->
-            <h2 class="temperature-text" id="temptxt">22</h2>
+           <h2 class="temperature-text" id="temptxt"></h2>
+         </div>
+         <div class="location-time">        
+          <h1 class="location" id="location-text"></h1>
+          <h1 class="time" id="time-text"></h1>
         </div>
-        
-        <h3 class="description" id="description-text">Partly Sunny</h3>
+
+        <div class="icon-desc">
+          <img id="icon" class="weather-icon" src="" height="60", width="60">
+          <h3 class="description" id="description-text"></h3>
+        </div>
+      <div class="blur-div">
+        <hr id="top-line" color="white">
+        <div class="additional-info">
+          <h2 class="add-heading">Weather Details</h2>
+          <h3 class="add-info" id="cloudy">Cloudy:</h3>
+          <h3 class="add-info" id="humidity">Humidity:</h3>
+          <h3 class="add-info" id="wind">Wind: </h3>
+        </div>
+        <hr id="bot-line", color="">
+      </div>
+    </div>
+  </div>
       <!-- </div>
   </div> -->
   <script src="script.js"></script>
