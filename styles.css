@@ -16,10 +16,16 @@ body{
     margin-bottom: 2vh;
 }
 
+.top-left{
+    display: flex;
+    align-items: flex-end;
+}
+
 .heading{
     font-size: 40px;
     font-weight: 500;
     color: white;
+    margin-left: 1vw;
     
 }
 
@@ -105,14 +111,14 @@ input{
 .description{
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     margin-left: 2vw;
     text-transform: capitalize;
 }
 
 .top{
     padding: 7vh;
-    margin: 0 5vw;
+    margin: 0 1vw;
     display: flex;
     justify-content: space-between;
     
@@ -142,10 +148,6 @@ input{
     color: white;
 }
 
-.weather-icon{
-    filter: invert(100%); 
-}
-
 .additional-info{
     display: flex;
     flex-direction: column;
@@ -157,7 +159,7 @@ input{
 
 .add-heading{
     font-weight: 400;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
 }
 
 .add-info{
@@ -175,7 +177,7 @@ input{
 
 #bot-line{
     position: absolute;
-    bottom: 10vh;
+    bottom: 3vh;
     width: 90%;
     margin-left: 4%;
 }
@@ -191,14 +193,117 @@ input{
 
 .loading-gif{
   display: block;
-  padding-top: 10vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 .loading-text{
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    right: 0;
     text-align: center;
     text-shadow: none;
     font-size: 30px;
     font-weight: 400;
 }
+
+.quote-container {
+    top: 20vh;
+    left: 5vw;
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    padding: 0 20px;
+ }
+ 
+ .quote {
+     position: relative;
+     max-width: 620px;
+     margin: 80px auto;
+     align-self: center;
+     backdrop-filter: blur(10px);
+ }
+ 
+ .quote h1 {
+     position: relative;
+     color: white;
+     font-size: 2.8rem;
+     font-weight: normal;
+     line-height: 1;
+     margin: 0;
+     border: 2px solid #fff;
+     border: solid 2px;
+     border-radius:20px;
+     padding: 25px;
+ }
+ 
+ .quote h1:after {
+     content:"";
+     position: absolute;
+     border: 2px solid ;
+     border-radius: 0 50px 0 0;
+     width: 60px;
+     height: 60px;
+     bottom: -62px;
+     left: 50px;
+     border-bottom: none;
+     border-left: none;
+     z-index: 3; 
+ }
+ 
+ .quote h1:before {
+     content:"";
+     position: absolute;
+     width: 80px;
+     border: 6px solid #292a2b;
+     bottom: -3px;
+     left: 50px;
+     z-index: 2;
+ }
+
+ 
+
+@media screen and (max-width: 1152px){
+    .blur-div{
+        width: 100vw;
+        height: 100vh;
+    }
+        
+    .location{
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        margin-left: 3vw;
+    }
+
+    .time{
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin-left: 3vw;
+    }
+
+    .search-box{
+        background: #2C3441;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    .temperature-text{
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    .quote-container {
+        top: 100vh;
+        position: absolute;
+        display: flex;
+        width: 50vw;
+        padding: 0 20px;
+     }
+    
+}
+

@@ -12,18 +12,26 @@
 </head>
 <body>
   <div class="loading">
-    <img class="loading-gif" src="loading.gif" height="500" width="500">
-    <h3 class="loading-text">Loading<br>Please Wait</h3>
+    <img class="loading-gif" src="loading-bg.gif" height="800" width="800">
+    <h3 class="loading-text">Please Wait...</h3>
   </div>
     <div class="weather-app">
       <div class="top">
+        <div class="top-left">
+          <img src="title.gif" height="60", width="60">
         <h1 class="heading">Weather App</h1>
+        </div>
         <div class="search-box">
-            <input type="text" id="search" placeholder="Search"/>
+            <input type="search" id="search" placeholder="Enter city name" autocomplete="off"/>
             <a href="#" class="icon" onclick="searchClick()">
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path></svg>
             </a>
         </div>
+      </div>
+      <div class="quote-container">
+        <div class="quote">
+          <h1 id="quote"></h1>
+      </div>
       </div>
       <div class="weather-container">
         <div class="temperature">
@@ -31,7 +39,7 @@
          </div>
          <div class="location-time">        
           <h1 class="location" id="location-text"></h1>
-          <h1 class="time" id="time-text"></h1>
+          <h1 class="time " id="time-text"></h1>
         </div>
 
         <div class="icon-desc">
@@ -44,6 +52,7 @@
           <h2 class="add-heading">Weather Details</h2>
           <h3 class="add-info" id="cloudy">Cloudy:</h3>
           <h3 class="add-info" id="humidity">Humidity:</h3>
+          <h3 class="add-info" id="pressure">Pressure:</h3>
           <h3 class="add-info" id="wind">Wind: </h3>
         </div>
         <hr id="bot-line", color="">
