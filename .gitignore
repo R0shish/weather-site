@@ -1,0 +1,6 @@
+# vscode file
+.vscode/
+
+*.docs
+*.pdf
+*.docx

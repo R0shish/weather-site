@@ -8,8 +8,6 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url('https://source.unsplash.com/1920x1080/?loading') no-repeat center fixed black;
-    background-size: cover;
 }
 
 .location-time{
@@ -89,7 +87,7 @@ input{
     position: absolute;
     top: 0;
     right: 0vw;
-    width: 50vw;
+    width: 55vw;
     height: 100vh;
     backdrop-filter: blur(20px);
     z-index: -1;
@@ -262,9 +260,12 @@ input{
      z-index: 2;
  }
 
- 
+ .last-updated{
+    margin-top: 2vh;
+ }
 
-@media screen and (max-width: 1152px){
+
+@media screen and (max-width: 1390px){
     .blur-div{
         width: 100vw;
         height: 100vh;
@@ -305,5 +306,8 @@ input{
         padding: 0 20px;
      }
     
+     .last-updated{
+        font-size: 10px;
+     }
 }
 
