@@ -1,5 +1,6 @@
 # vscode file
 .vscode/
+.DS_Store
 
 *.docs
 *.pdf
